@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.edu.unisep.appnutri.activity_objetivo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Qual é o seu Objetivo?"
+        android:id="@+id/lblPergunta"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/gpPergunta"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gpPergunta"
+        android:layout_marginBottom="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/lblPergunta"
+        android:layout_alignEnd="@+id/lblPergunta">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perder Peso"
+            android:id="@+id/rdPerderPeso"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganhar Massa Muscular"
+            android:id="@+id/rdGanharMassa"
+            android:layout_marginTop="10dp"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Melhorar Alimentação"
+            android:id="@+id/radioButton"
+            android:layout_marginTop="10dp"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avançar"
+        android:id="@+id/btnAvancar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/gpPergunta"
+        android:layout_alignEnd="@+id/gpPergunta" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgPergunta"
+        android:layout_above="@+id/lblPergunta"
+        android:layout_alignEnd="@+id/lblPergunta"
+        android:layout_marginBottom="30dp"
+        android:layout_alignStart="@+id/lblPergunta"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:src="@android:color/holo_blue_bright" />
+
+</RelativeLayout>

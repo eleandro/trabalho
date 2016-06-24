@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.edu.unisep.appnutri.DadosPessoais">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Peso"
+        android:id="@+id/lblPeso"
+        android:layout_marginTop="83dp"
+        android:layout_marginStart="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtPeso"
+        android:layout_alignTop="@+id/lblPeso"
+        android:layout_toEndOf="@+id/lblPeso" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Altura"
+        android:id="@+id/txtAltura"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignStart="@+id/lblPeso" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/txtPeso"
+        android:layout_toEndOf="@+id/txtAltura"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sexo"
+        android:id="@+id/lblSexo"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/editText"
+        android:layout_toStartOf="@+id/gpSexo" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:id="@+id/gpSexo"
+        android:layout_below="@+id/lblSexo">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/femenino"
+            android:id="@+id/rdFemenino"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masculino"
+            android:id="@+id/rdMasculino"
+            android:layout_marginTop="10dp"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/avancar"
+        android:id="@+id/btnsDadosPessoais"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/txtPeso"
+        android:layout_alignStart="@+id/txtAltura" />
+
+</RelativeLayout>

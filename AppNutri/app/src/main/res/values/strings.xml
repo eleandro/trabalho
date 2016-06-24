@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppNutri</string>
+
+    <string name="app_fb_appNutri">241500806231427</string>
+    <string name="femenino">Femenino</string>
+    <string name="masculino">Masculino</string>
+    <string name="avancar">Avançar</string>
+    <string name="cafe_manha">Café da Manhã</string>
+    <string name="cafe_pao">Pães</string>
+    <string name="cafe_ovos">Ovos</string>
+</resources>
