@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Qual é seu nivel de atividade Fisíca?"
+        android:id="@+id/textView5"
+        android:layout_marginTop="197dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgAtividade"
+        android:baselineAligned="false"
+        android:transitionGroup="true"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baixa"
+            android:id="@+id/rbBaixa"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moderada"
+            android:id="@+id/rbModerada"
+            android:checked="false"
+            android:layout_marginTop="10dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intensiva"
+            android:id="@+id/rbIntensiva"
+            android:checked="false"
+            android:layout_marginTop="10dp" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar"
+        android:id="@+id/btnFinalizar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView5" />
+</RelativeLayout>

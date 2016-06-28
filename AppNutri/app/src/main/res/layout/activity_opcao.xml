@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cereais, pães, raizes"
+        android:id="@+id/lblCereais"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lblCarne"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hortaliças"
+        android:id="@+id/lblHortalica"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Frutas"
+        android:id="@+id/lblFrutas"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lblAcucar"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Leguminosas"
+        android:id="@+id/lblLegumes"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/lblFrutas"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Carne e Ovos"
+        android:id="@+id/lblCarne"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Leite e produtos lácteos"
+        android:id="@+id/lblLeite"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/lblLegumes"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Óleos e gorduras"
+        android:id="@+id/lblOleos"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lblCereais"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Açucares e Doces"
+        android:id="@+id/lblAcucar"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar"
+        android:id="@+id/btnFinalizar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/lblLeite" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtHortalica"
+        android:layout_alignBottom="@+id/lblHortalica"
+        android:layout_toEndOf="@+id/lblLeite"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtCarnte"
+        android:layout_above="@+id/lblCereais"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtHortalica"
+        android:layout_alignStart="@+id/txtHortalica"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtCereais"
+        android:layout_below="@+id/txtCarnte"
+        android:layout_alignStart="@+id/txtCarnte"
+        android:layout_alignBottom="@+id/lblCereais"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtOleos"
+        android:layout_above="@+id/lblAcucar"
+        android:layout_alignEnd="@+id/txtCereais"
+        android:layout_alignTop="@+id/lblOleos"
+        android:layout_alignStart="@+id/txtCereais"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="-10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtAcucar"
+        android:layout_above="@+id/lblFrutas"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/txtOleos"
+        android:layout_below="@+id/txtOleos"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtFruta"
+        android:layout_alignTop="@+id/lblFrutas"
+        android:layout_alignStart="@+id/txtAcucar"
+        android:layout_above="@+id/lblLegumes"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtLegume"
+        android:layout_below="@+id/txtFruta"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/lblLegumes"
+        android:layout_alignStart="@+id/txtFruta"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtLeite"
+        android:layout_below="@+id/txtLegume"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/lblLeite"
+        android:layout_toEndOf="@+id/lblLeite"
+        android:layout_marginBottom="-10dp"
+        android:layout_alignStart="@+id/txtLegume"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Informe a quantidade"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/txtHortalica"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

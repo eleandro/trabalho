@@ -58,8 +58,8 @@
         android:text="Avançar"
         android:id="@+id/btnAvancar"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/gpPergunta"
-        android:layout_alignEnd="@+id/gpPergunta" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"

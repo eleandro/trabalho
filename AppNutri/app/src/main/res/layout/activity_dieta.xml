@@ -7,69 +7,43 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.edu.unisep.appnutri.dieta">
+    tools:context="br.edu.unisep.appnutri.dieta"
+    android:id="@+id/lmo">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/cafe_manha"
-        android:id="@+id/lblCafeManha"
+        android:text="Café da Manhã"
+        android:id="@+id/btnCafeManha"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="10dp"
         android:layout_alignParentEnd="true" />
 
-    <CheckBox
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cafe_pao"
-        android:id="@+id/ckCafePao"
-        android:layout_below="@+id/lblCafeManha"
+        android:text="Almoço"
+        android:id="@+id/btnAlmoco"
+        android:layout_below="@+id/btnCafeManha"
         android:layout_alignParentStart="true"
-        android:checked="false"
-        android:layout_marginTop="5dp" />
+        android:layout_alignEnd="@+id/btnCafeManha" />
 
-    <CheckBox
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cafe_ovos"
-        android:id="@+id/ckCafeOvos"
-        android:checked="false"
-        android:layout_marginLeft="10dp"
-        android:layout_alignTop="@+id/ckCafePao"
-        android:layout_toEndOf="@+id/ckCafePao"
-        android:layout_marginStart="43dp" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New CheckBox"
-        android:id="@+id/checkBox"
-        android:layout_alignTop="@+id/ckCafeOvos"
+        android:text="Janta"
+        android:id="@+id/btnJanta"
+        android:layout_below="@+id/btnAlmoco"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
-    <CheckBox
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New CheckBox"
-        android:id="@+id/checkBox2"
-        android:layout_below="@+id/ckCafePao"
-        android:layout_alignParentStart="true" />
+        android:text="Relatorio"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New CheckBox"
-        android:id="@+id/checkBox3"
-        android:layout_below="@+id/ckCafeOvos"
-        android:layout_alignStart="@+id/ckCafeOvos" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New CheckBox"
-        android:id="@+id/checkBox4"
-        android:layout_below="@+id/checkBox"
-        android:layout_alignStart="@+id/checkBox" />
 </RelativeLayout>
